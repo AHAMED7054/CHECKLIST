@@ -1,0 +1,148 @@
+<html>
+     <head> 
+       <title>Pre-vaccination checklist</title> 
+    </head>
+     <body>
+       <h1> Pre-Vaccination Checklist for COVID-19 Vaccines</h1> <hr>
+       <form method="POST">
+        <h3>
+           <p>
+                <label for="name">Patient Name:</label> 
+                <input type="text" name ="patient name"  required  placeholder=" Patient Name" maxlength="30" > 
+                <label for="age">Age:</label> 
+                <input type="number" name="age" required min="1" max="99" placeholder ="age"> 
+                <label for="number">Contact No:</label> 
+                <input type="text" name= "Contact No"  required placeholder="Contact No" pattern="[0-9]{10}"> 
+                <label for="email_id">Email_id: </label>
+                <input type="email" name=" email_id" id="email_id">
+                <label for="date">Date:</label>
+                <input type="date" name="date" required>
+             </p>
+    </h3> <hr>
+    <h2> <p>For vaccine recipients:</p> </h2>
+    <h4>
+        <p>The following questions will help us determine 
+            if there is any reason you should not get the COVID-19 vaccine today. <br> <b>If you answer "YES" to any question, it doesnot necessarily mean you
+             should not vaccinated.</b><br>It just means additional questions may be asked.
+            if a question is not clear, please ask your healthcare provider to explain it. </p>
+    </h4> <hr>
+    <table border="3">
+ <ol> 
+    <tr>
+        <td><li>
+            Are you feeling sick today?</li> 
+        </td>
+        <td>
+            <input type="radio" name="1.answer" value="Yes" checked> Yes
+            <input type="radio" name="1.answer" value="No"> No
+            <input type="radio" name="1.answer" value="Don't Know"> Don't Know
+        </td>  
+    </tr>  
+    <tr>
+        <td> <li>
+            Have you ever received a dose of COVID-19 vaccine?</li> 
+        </td>
+        <td>
+            <input type="radio" name="2.answer" value="Yes" checked> Yes
+            <input type="radio" name="2.answer" value="No"> No
+            <input type="radio" name="2.answer" value="Don't Know"> Don't Know
+        </td>   
+    </tr>
+    
+    <tr>
+        <th colspan="2">
+         If YES, which vaccine product did you receive?
+         <input type="radio" name="2a.answer" value="covaccine"> covaccine
+         <input type="radio" name="2a.answer" value="covisheild"> covisheild
+         <input type="radio" name="2a.answer" value="Another_product" > Another_product <input type="text" placeholder="please mention">
+        </th>      
+    </tr>  
+    <tr>
+        <td><li>
+            Have you ever have an allergic reaction to:
+           (This would include hives,swelling,respiratory distress,wheezing)? </li>
+        </td>
+        <td>
+            <input type="radio" name="3.answer" value="Yes" checked> Yes
+            <input type="radio" name="3.answer" value="No"> No
+            <input type="radio" name="3.answer" value="Don't Know"> Don't Know
+        </td>
+    </tr>  
+    <tr>
+        <td><li>
+            Have you ever had an allergic reaction to another vaccine (other than COVID-19 vaccine)
+            or an injectable medication?</li>
+        </td>
+        <td>
+            <input type="radio" name="4.answer" value="Yes" checked> Yes
+            <input type="radio" name="4.answer" value="No"> No
+            <input type="radio" name="4.answer" value="Don't Know"> Don't Know
+        </td> 
+    </tr>   
+    <tr>
+        <td><li>
+           Have you ever receive any vaccine in the last 14 days?</li>
+        </td>
+        <td>
+            <input type="radio" name="5.answer" value="Yes" checked> Yes
+            <input type="radio" name="5.answer" value="No"> No
+            <input type="radio" name="5.answer" value="Don't Know"> Don't Know
+        </td>
+    </tr>   
+    <tr>
+        <td><li>
+           Have you ever had a positive test for COVID-19 or has  a doctor 
+           ever told you that you had COVID-19?</li>
+        </td>
+        <td>
+            <input type="radio" name="6.answer" value="Yes" checked> Yes
+            <input type="radio" name="6.answer" value="No"> No
+            <input type="radio" name="6.answer" value="Don't Know"> Don't Know
+        </td>
+    </tr>   
+    <tr>
+        <td> <li>
+           Have you received passive antibody therapy(monoclonal antibodies or convalescent serum) as treatment for COVID-19?
+        </li></td>
+        <td>
+            <input type="radio" name="7.answer" value="Yes" checked> Yes
+            <input type="radio" name="7.answer" value="No"> No
+            <input type="radio" name="7.answer" value="Don't Know"> Don't Know
+        </td>
+    </tr> 
+    <tr>
+        <td> <li>
+           Do you have a weekened immune system caused by something such as HIV infection or cancer or do you take immunosuppressive drugs or therapies?
+        </li></td>
+        <td>
+            <input type="radio" name="8.answer" value="Yes" checked> Yes
+            <input type="radio" name="8.answer" value="No"> No
+            <input type="radio" name="8.answer" value="Don't Know"> Don't Know
+        </td>
+    </tr>
+       <tr>
+        <td><li>
+            Do you have a bleeding disorder or are you taking a blood thinner?</li>
+        </td>
+        <td>
+            <input type="radio" name="9.answer" value="Yes" checked> Yes
+            <input type="radio" name="9.answer" value="No"> No
+            <input type="radio" name="9.answer" value="Don't Know"> Don't Know
+        </td> 
+    </tr> 
+    <tr>
+        <td><li>
+           Are you pregnant or breastfeeding?</li>
+        </td>
+        <td>
+            <input type="radio" name="10.answer" value="Yes" checked> Yes
+            <input type="radio" name="10.answer" value="No"> No
+            <input type="radio" name="10.answer" value="Don't Know"> Don't Know
+        </td>  
+    </tr>
+</ol>
+    </table><br>
+    <input type="submit" value="Send">
+       </form>
+     </body>
+</html>
